@@ -1,4 +1,4 @@
-export DEBIAN_FRONTEND=noninteractive
+dxport DEBIAN_FRONTEND=noninteractive
 echo "Updating Ubuntu....."
 sudo apt-get -qq -y update
 #sudo apt-get -qq -y upgrade
@@ -8,6 +8,8 @@ echo "Installing tools... vim, curl etc..."
 sudo apt-get -qq -y install curl
 sudo apt-get -qq -y install vim
 sudo apt-get -qq -y install git
+sudo apt-get -qq -y install htop
+sudo apt-get -qq -y install tmux
 
 # Install Apache
 sudo apt-get -qq -y install apache2
