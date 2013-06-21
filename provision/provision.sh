@@ -42,7 +42,13 @@ echo "Composer Installed"
 chmod -R 777 /vagrant/app/storage/
 
 # Run composer update
-cd /vagrant/
-composer update
+# cd /vagrant/
+# composer update
+
+# Setup PHP Unit Testing..
+sudo pear channel-discover pear.phpunit.de
+sudo pear channel-discover components.ez.no
+sudo pear channel-discover pear.symfony.com
+sudo pear install --alldeps phpunit/PHPUnit
 
 echo "Done"
