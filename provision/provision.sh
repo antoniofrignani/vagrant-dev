@@ -16,6 +16,8 @@ sudo apt-get -qq -y install apache2
 
 # Copy over default apache file to point to the public directory in /vagrant for laravel
 sudo cp /vagrant/provision/default /etc/apache2/sites-available/default
+# Enable Mod-Rewrite
+sudo a2enmod rewrite
 sudo service apache2 restart
 echo "Apache Intalled"
 
